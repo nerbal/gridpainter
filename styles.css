@@ -1,0 +1,11 @@
+* {
+    background-color: coral;
+    color: whitesmoke;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    display: grid;
+}
