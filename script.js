@@ -8,7 +8,7 @@ function initializeGrid(size) {
     
     for (let i = 0; i < (size * size); i++) {
         const gridElement = document.createElement("div");
-        gridElement.style.backgroundColor = "cyan";
+        gridElement.style.backgroundColor = "bisque";
         container.insertAdjacentElement("beforeend", gridElement);
     }
 }
