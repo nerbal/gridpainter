@@ -1,11 +1,53 @@
 * {
-    background-color: coral;
-    color: whitesmoke;
+    background-color:cornsilk;
+    color: black;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-    height: 500px;
-    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.heading {
+    font-weight: 800;
+    padding-left: 50px;
+}
+
+.container > * {
     padding: 50px;
+}
+
+.ui {
+    height: 750px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons > * {
+    padding: 12px 4px;
+}
+
+.grid {
+    height: 750px;
+    width: 750px;
     display: grid;
 }
