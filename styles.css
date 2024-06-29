@@ -24,7 +24,6 @@
 }
 
 .ui {
-    border: solid goldenrod 2px;
     height: 750px;
     display: flex;
     flex-direction: column;
@@ -36,6 +35,35 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+input {
+    padding-left: 10px;
+    width: 250px;
+    transition-duration: 0.2s;
+}
+
+input:focus {
+    background-color: darkgrey;
+}
+
+
+
+#button {
+    background-color: black;
+    color: cornsilk;
+    height: 100%;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+#button:hover {
+    background-color: coral;
+    transform: scale(1.1);
+}
+
+#button:active {
+    transform: scale(0.9);
 }
 
 .buttons {
@@ -66,7 +94,6 @@
 }
 
 .grid {
-    border: solid goldenrod 25px;
     height: 750px;
     width: 750px;
     display: grid;

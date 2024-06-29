@@ -1,5 +1,8 @@
 let default_size = 16;
 let color = "black";
+let mouseDown = false
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
 
 const blackPen = document.getElementById("black");
 const whitePen = document.getElementById("white");
@@ -13,7 +16,6 @@ erasor.addEventListener("click", function(){setColor("bisque")});
 
 const reset = document.querySelector(".reset");
 reset.addEventListener("click", resetGrid);
-
 
 function initializeGrid(size) {
     const container = document.querySelector(".grid");
@@ -48,11 +50,13 @@ function setColor(choice){
     color = choice;
 }
 
-function changeColor(){
-    if (color === "rainbow") {
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    } else {
-        this.style.backgroundColor = color;
+function changeColor(e){
+    if (e.type === "mouseover" && mouseDown) {
+        if (color === "rainbow") {
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        } else {
+            this.style.backgroundColor = color;
+        }
     }
 }
 
