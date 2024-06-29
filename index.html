@@ -17,14 +17,16 @@
                 <div class="upper">
                     <h2 class="subheading">Settings</h2>
                     <div class="buttons">
-                        <button class="pen">black-pen</button>
-                        <button class="pen">white-pen</button>
-                        <button class="pen">rainbow-pen</button>
+                        <button id="black" class="pen">black-pen</button>
+                        <button id="white" class="pen">white-pen</button>
+                        <button id="rainbow" class="pen">rainbow-pen</button>
+                        <button id="erasor" class="pen">erasor</button>
                     </div>
                 </div>
                 <div class="settings">
                     <input type="text" placeholder="size of board" value="16" onchange="changeSize(this.value)"/>
                     <button>set size</button>
+                    <button class="reset">reset</button>
                 </div>
             </div>
             <div class="container">
