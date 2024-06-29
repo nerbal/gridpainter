@@ -36,10 +36,6 @@ function resetGrid() {
     grid.forEach((div) => (div.style.backgroundColor = "bisque"))
 }
 
-
-initializeGrid(default_size)
-
-
 function changeSize(input) {
     if(input >= 16 && input <= 128) {
         initializeGrid(input);
@@ -58,4 +54,8 @@ function changeColor(){
     } else {
         this.style.backgroundColor = color;
     }
+}
+
+window.onload = () => {
+    initializeGrid(default_size)
 }
