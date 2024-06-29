@@ -24,6 +24,7 @@
 .ui {
     height: 750px;
     padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,15 +40,36 @@
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 7px;
 }
 
 .buttons > * {
     padding: 12px 4px;
+    width: 250px;
+    border-color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.pen:hover {
+    background-color: black;
+    color: cornsilk;
+    transform: scale(1.1);
+}
+
+.pen:active {
+    transform: scale(0.9);
+    background-color:grey;
+    transition-timing-function: ease-out;
 }
 
 .grid {
     height: 750px;
     width: 750px;
     display: grid;
+}
+
+.grid > * {
+    cursor: cell;
 }
