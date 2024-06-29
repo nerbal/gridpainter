@@ -4,6 +4,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+.footer {
+    padding-left: 50px;
+    font-size: 10px;
+    width: 100%;
+}
+
 
 .container {
     display: flex;
