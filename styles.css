@@ -4,10 +4,19 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100;
+}
+
 .footer {
-    padding-left: 50px;
+    padding: 20px 50px;
     font-size: 10px;
-    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 
@@ -52,8 +61,6 @@ input {
 input:focus {
     background-color: darkgrey;
 }
-
-
 
 #button {
     background-color: black;
